@@ -1,0 +1,57 @@
+- !<AssetImportMetadata/2dfe3ec0-46ba-4efb-9c48-19e9bc3101f7>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a522554c-3c5c-4957-8078-c2fe1897919a
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a522554c-3c5c-4957-8078-c2fe1897919a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> eb3e9766-b276-49ca-ab3c-f4e1449d2f6f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/eb3e9766-b276-49ca-ab3c-f4e1449d2f6f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: d57b0f16-5b2f-490a-aa09-b2ec6333a0b5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    Sounds: false
+    animDuration: false
+    choiceLeft: false
+    choiceRight: false
+    delayBeforeFadeOut: false
+    parent: false
+    parentLeft: false
+    parentRight: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      animDuration: 0.500000
+      delayBeforeFadeOut: !<float> 1.000000
+      parentLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      choiceLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      parentRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      choiceRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Sounds: !<reference.AudioComponent[]>
+        []
+  ScriptTypes:
+    -
+      {}

@@ -1,0 +1,30 @@
+- !<AssetCache>
+  AssetFiles:
+    b3a14544-b889-4960-ad68-6a5b0726c157: 5f0af766-7a66-48ca-9cd9-68d5f5145f31/854637425603a4ad13136508fd556f79/Data/Hint_Swap_Camera.lensanim
+    d9878774-09b9-45d7-8ee5-ebb24caddea2: 5f0af766-7a66-48ca-9cd9-68d5f5145f31/854637425603a4ad13136508fd556f79/Data/LPD_9_v02.png
+  Assets:
+    - !<AnimatedTexture/b3a14544-b889-4960-ad68-6a5b0726c157>
+      PackagePath: ""
+      keyFrames:
+        default:
+          - time: 0.000000
+            value: 0
+          - time: 4.800000
+            value: 72
+      ReverseSupported: true
+      FrameSize: {x: 116, y: 177}
+      AnimationSequences:
+        default: 72
+      AutoPlay: true
+      Reversed: false
+      PingPong: false
+      CurrentSequence: default
+    - !<FileTexture/d9878774-09b9-45d7-8ee5-ebb24caddea2>
+      PackagePath: LPD_9_v02.png
+      FileInfo: !<FileTextureInfo>
+        Width: 1020
+        Height: 984
+  SourceHash: 854637425603a4ad13136508fd556f79
+  FileHash: 39597059721d292e48243261d25c40b5
+  NativePackageItems:
+    []

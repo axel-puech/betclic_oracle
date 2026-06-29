@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    69ccd637-3f4a-4afc-b001-c117fbe4fc8f: eec491b5-1baf-4651-b2af-3311058e4db6/b1ce158fe071f4263389d5b9af826fc9/Data/Group 1 Selected.png
+  Assets:
+    - !<FileTexture/69ccd637-3f4a-4afc-b001-c117fbe4fc8f>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: b1ce158fe071f4263389d5b9af826fc9
+  FileHash: 1023435c4a8bcf22fd502d0345989cc3
+  NativePackageItems:
+    []

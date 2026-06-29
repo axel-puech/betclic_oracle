@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    1421ef7d-4f35-4a6d-80f7-01877c04dbbd: d826c8bb-9ed7-4d2d-9b73-35cfab1c207f/d709b0da2bb65d6ca0fb09372586f551/Data/Group 3.png
+  Assets:
+    - !<FileTexture/1421ef7d-4f35-4a6d-80f7-01877c04dbbd>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: d709b0da2bb65d6ca0fb09372586f551
+  FileHash: f5494faf3e6507171097111808dddb5d
+  NativePackageItems:
+    []

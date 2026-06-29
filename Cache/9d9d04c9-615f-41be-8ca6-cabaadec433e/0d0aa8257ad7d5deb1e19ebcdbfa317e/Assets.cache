@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    f73236f6-9335-49fa-887b-1aec08ac09ee: 9d9d04c9-615f-41be-8ca6-cabaadec433e/0d0aa8257ad7d5deb1e19ebcdbfa317e/Data/Group 7.png
+  Assets:
+    - !<FileTexture/f73236f6-9335-49fa-887b-1aec08ac09ee>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: 0d0aa8257ad7d5deb1e19ebcdbfa317e
+  FileHash: 02daa3e8cb3697e0c56c58a0656309c7
+  NativePackageItems:
+    []

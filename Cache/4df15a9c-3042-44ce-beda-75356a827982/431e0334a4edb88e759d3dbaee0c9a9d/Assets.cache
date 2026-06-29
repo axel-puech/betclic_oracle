@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    2fea4931-a581-4911-b507-811947dcb22c: 4df15a9c-3042-44ce-beda-75356a827982/431e0334a4edb88e759d3dbaee0c9a9d/Data/Group 4.png
+  Assets:
+    - !<FileTexture/2fea4931-a581-4911-b507-811947dcb22c>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: 431e0334a4edb88e759d3dbaee0c9a9d
+  FileHash: d096dd6e38aba0173a6cd71a1cc1d2a4
+  NativePackageItems:
+    []

@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    e863e018-2d21-4bbe-b894-64cace425454: d8bf265c-13d4-4798-bdcc-20a2fe01a13e/49a6586ce25923bd56bf20a963002d33/Data/Group 6.png
+  Assets:
+    - !<FileTexture/e863e018-2d21-4bbe-b894-64cace425454>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: 49a6586ce25923bd56bf20a963002d33
+  FileHash: 27069756372dc907ca2438c2beaecd61
+  NativePackageItems:
+    []

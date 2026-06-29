@@ -1,0 +1,47 @@
+//@input SceneObject parent
+
+//@input float animDuration = 0.5
+//@input float timeBetweenRounds = 1.0
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"LEFT HEAD PANEL "}
+//@input SceneObject parentLeft
+//@input SceneObject choiceLeft
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"RIGHT HEAD PANEL "}
+//@input SceneObject parentRight
+//@input SceneObject choiceRight
+
+//@input Component.AudioComponent[] Sounds
+
+// prend deux textures de pays
+// cree un un objet pour chaque
+
+//@input SceneObject parent
+//_________________________Director Setup_________________________//
+script.subScene = new global.SubScene(script, script.parent);
+script.subScene.OnStart = Start;
+script.subScene.OnLateStart = OnLateStart;
+script.subScene.OnStop = Stop;
+script.subScene.SetUpdate(Update);
+//__________________________Variables_____________________________//
+
+const choiceLeftTexture = global.choiceLeftTexture;
+const choiceRightTexture = global.choiceRightTexture;
+
+const makeUpLeftTexture = global.makeUpLeftTexture;
+const makeUpRightTexture = global.makeUpRightTexture;
+
+//________Caller________//
+//________Listener________//
+//________DelayEvent________//
+
+//_________________________Director_Functions_____________________//
+function Start() {}
+function OnLateStart() {}
+function Update() {}
+function Stop() {}
+//___________________________Functions__________________________//
+
+//___________________________Animations_________________________//

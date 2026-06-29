@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    1a4b1435-1241-4ca6-98c6-b5c298196e0c: e582546b-458c-414a-8c37-29b55f4d098f/ba8121a7a154e77740019771a1d29afd/Data/Group 2.png
+  Assets:
+    - !<FileTexture/1a4b1435-1241-4ca6-98c6-b5c298196e0c>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: ba8121a7a154e77740019771a1d29afd
+  FileHash: 266e3cd7dfbf50b701d5cae7a02b4736
+  NativePackageItems:
+    []

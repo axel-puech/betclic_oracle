@@ -1,0 +1,155 @@
+//@input SceneObject parent
+
+//@input float animDuration = 0.5
+//@input float timeBetweenRounds = 1.0
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"LEFT HEAD PANEL "}
+//@input SceneObject parentLeft
+//@input SceneObject choiceLeft
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"RIGHT HEAD PANEL "}
+//@input SceneObject parentRight
+//@input SceneObject choiceRight
+
+//@input Component.AudioComponent[] Sounds
+
+// prend deux textures de pays
+// cree un un objet pour chaque
+
+//@input SceneObject parent
+//_________________________Director Setup_________________________//
+script.subScene = new global.SubScene(script, script.parent);
+script.subScene.OnStart = Start;
+script.subScene.OnLateStart = OnLateStart;
+script.subScene.OnStop = Stop;
+script.subScene.SetUpdate(Update);
+
+//__________________________Variables_____________________________//
+
+const choiceLeftTexture = global.choiceLeftTexture;
+const choiceRightTexture = global.choiceRightTexture;
+
+const makeUpLeftTexture = global.makeUpLeftTexture;
+const makeUpRightTexture = global.makeUpRightTexture;
+
+//________Caller________//
+//________Listener________//
+//________DelayEvent________//
+
+//_________________________Director_Functions_____________________//
+function Start() {}
+function OnLateStart() {}
+function Update() {}
+function Stop() {}
+//___________________________Functions__________________________//
+
+//___________________________Animations_________________________//
+
+//__________________________Classes_____________________________//
+
+class HeadPanel {
+  constructor(parentObject, imageObject, texture) {
+    this._parentObject = parentObject;
+    this._imageObject = imageObject;
+    this._texture = texture;
+
+    // Parent object
+    this._parentTransform = this._parentObject.getTransform();
+
+    // Image object
+    this._image = this._imageObject.getComponent("Component.Image");
+
+    this.anims = {
+      fade: null,
+      scale_up: null,
+      scale_down: null,
+      fade_flare: null,
+      fade_particles: null,
+      mix_texture: null,
+      transparent: null,
+    };
+    this.initAnimations();
+    this.resetAnimations();
+  }
+
+  initAnimations() {
+    // Fade animation
+    this.anims.fade = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
+      this._image.mainPass.alphaRatio = ratio;
+    });
+
+    // Scale up animation
+    this.anims.scale_up = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
+      var scale = 1 + ratio * 0.3;
+      this._parentTransform.setLocalScale(new vec3(scale, scale, scale));
+    });
+    this.anims.scale_up.Easing = QuadraticInOut;
+
+    // Scale down animation
+    this.anims.scale_down = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
+      var scale = 1 - ratio * 0.2;
+      this._parentTransform.setLocalScale(new vec3(scale, scale, scale));
+    });
+    this.anims.scale_down.Easing = QuadraticInOut;
+    // Fade flare animation
+    this.anims.fade_flare = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
+      this._flareImage.mainPass.baseColor = new vec4(1, 1, 1, ratio);
+    });
+    this.anims.fade_particles = new Animation(script.getSceneObject(), 1, (ratio) => {
+      this._particleEmitter.asset.properties["alphaRatio"] = ratio;
+    });
+    this.anims.mix_texture = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
+      this._image.mainPass.mixRatio = ratio;
+    });
+
+    // make the not selected panel a bit transparent
+    this.anims.transparent = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
+      this._image.mainPass.alphaRatio = 1 - ratio * 0.5;
+    });
+  }
+
+  setTexture(currentTexture) {
+    this._currentTexture = currentTexture;
+    this._image.mainPass.currentTexture = currentTexture;
+  }
+  setNewTexture(newTexture) {
+    this._newTexture = newTexture;
+    this._image.mainPass.newTexture = newTexture;
+  }
+
+  resetAnimations() {
+    this.anims.fade.Reset();
+    this.anims.scale_up.Reset();
+    this.anims.scale_down.Reset();
+    this.anims.fade_flare.Reset();
+    this.anims.fade_particles.Reset();
+    this.anims.mix_texture.Reset();
+    this.anims.transparent.Reset();
+  }
+}
+
+function Instantiation() {
+  headPanelLeft = new HeadPanel(
+    script.parentLeft,
+    script.flavourLeft,
+    script.particlesLeft,
+    script.flareLeft,
+    true,
+    selectedFlavours[0],
+  );
+  headPanelLeft.setTexture(script.flavoursTextures[selectedFlavours[0]]);
+  headPanelLeft.anims.fade.GoTo(1);
+
+  headPanelRight = new HeadPanel(
+    script.parentRight,
+    script.flavourRight,
+    script.particlesRight,
+    script.flareRight,
+    false,
+    selectedFlavours[1],
+  );
+  headPanelRight.setTexture(script.flavoursTextures[selectedFlavours[1]]);
+  headPanelRight.anims.fade.GoTo(1);
+}

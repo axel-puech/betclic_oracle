@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    914f8834-8f36-47d0-9ac6-d278acf7a856: 0ea91396-b98b-4d35-bf24-bf12eacac12d/f82c718b43bfe8106ef467a8c960129e/Data/Group 8.png
+  Assets:
+    - !<FileTexture/914f8834-8f36-47d0-9ac6-d278acf7a856>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 68
+        Height: 68
+  SourceHash: f82c718b43bfe8106ef467a8c960129e
+  FileHash: 104b2993bcb1e9875f7c40a0d263eadb
+  NativePackageItems:
+    []

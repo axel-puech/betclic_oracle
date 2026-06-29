@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    28ee79ac-42b8-48b5-bffe-5579861430eb: a647ffbc-3863-447a-b398-1445cdb2d796/3bdc923b52207865cede1dd8c3664e26/Data/LOGO_DEFAULT_FR.png
+  Assets:
+    - !<FileTexture/28ee79ac-42b8-48b5-bffe-5579861430eb>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 632
+        Height: 152
+  SourceHash: 3bdc923b52207865cede1dd8c3664e26
+  FileHash: 66afcc79f6c5e6215f6007906947f02a
+  NativePackageItems:
+    []

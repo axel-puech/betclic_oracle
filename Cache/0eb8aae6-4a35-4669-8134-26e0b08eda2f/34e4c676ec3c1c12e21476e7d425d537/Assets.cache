@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    307079c6-d23a-4b1d-a7ee-4e63d267a2b2: 0eb8aae6-4a35-4669-8134-26e0b08eda2f/34e4c676ec3c1c12e21476e7d425d537/Data/FaceMeshTexture.jpg
+  Assets:
+    - !<FileTexture/307079c6-d23a-4b1d-a7ee-4e63d267a2b2>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1024
+        Height: 1024
+  SourceHash: 34e4c676ec3c1c12e21476e7d425d537
+  FileHash: ad1eaad5d7f103432400f8ffe8370fdb
+  NativePackageItems:
+    []

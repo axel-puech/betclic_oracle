@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    2d9c269e-a08c-4fee-8477-7f12c7343768: e298ee10-fa8a-4254-a0e1-f383282b518e/fc26551b9aa290fc22e0ba7282e898b0/Data/LOGO_DEFAULT.png
+  Assets:
+    - !<FileTexture/2d9c269e-a08c-4fee-8477-7f12c7343768>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 632
+        Height: 152
+  SourceHash: fc26551b9aa290fc22e0ba7282e898b0
+  FileHash: 7f04de468fa4250690efaabae663c392
+  NativePackageItems:
+    []

@@ -1,0 +1,17 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 11
+    values:
+      - Base.png
+      - Face Mask.mat
+      - Face Mesh.facemesh
+      - Face Mesh.mat
+      - FaceMask.png
+      - FaceMaskOpacity.jpg
+      - FaceMeshTexture.jpg
+      - Scripts/DirectorBasics/SubScenes/Game.js
+      - Textures/Base
+      - face_mesh.ss_graph
+      - flat.ss_graph
+  options: 4
