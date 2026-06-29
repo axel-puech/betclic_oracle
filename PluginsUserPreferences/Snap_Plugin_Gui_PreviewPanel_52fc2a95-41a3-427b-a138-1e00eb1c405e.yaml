@@ -76,5 +76,5 @@ tintSpectaclesSimulation:
   options: 4
 uiMode:
   type: int
-  value: 0
+  value: 1
   options: 4

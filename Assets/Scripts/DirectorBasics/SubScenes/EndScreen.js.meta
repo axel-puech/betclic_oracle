@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/ba14b1fa-2340-4ac5-8e9f-895dd2460af3>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> fd6a0eb2-3ece-42f5-8e04-bd4b13a8bcdd
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> fd6a0eb2-3ece-42f5-8e04-bd4b13a8bcdd
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 9f1f1973-fb2b-43f8-a748-ed0b55d52765
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/9f1f1973-fb2b-43f8-a748-ed0b55d52765>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6f3e6420-55d4-44c5-a468-74b6c04c39ff
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bannerImages: false
+    delayBeforeAppear: false
+    durationFade: false
+    parent: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bannerImages: !<reference.Image[]>
+        []
+      durationFade: !<float> 1.000000
+      delayBeforeAppear: !<float> 1.000000
+  ScriptTypes:
+    -
+      {}

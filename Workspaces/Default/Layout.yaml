@@ -46,7 +46,7 @@ dock:
       - 274
       - 274
       - 973
-      - 643
-      - 374
+      - 452
+      - 565
     type: splitter
     orientation: horizontal

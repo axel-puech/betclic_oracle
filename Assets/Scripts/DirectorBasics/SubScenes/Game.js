@@ -43,6 +43,7 @@ const makeUpRightTexture = global.makeUpRightTexture;
 
 //________Caller________//
 const activateTrackingCaller = script.subScene.CreateCaller("activateTrackingEvent", 0);
+const pronoDone = script.subScene.CreateCaller("pronoDoneEvent", null);
 
 //________Listener________//
 const headMoveListener = script.subScene.CreateListener("headMoveEvent", OnHeadMove);
@@ -73,10 +74,12 @@ function OnHeadMove(value) {
     activateTrackingCaller.Call(0);
     fadeOutDelay.event.reset(script.delayBeforeFadeOut);
     LeftChoice();
+    pronoDone.Call();
   } else if (value == 2) {
     activateTrackingCaller.Call(0);
     fadeOutDelay.event.reset(script.delayBeforeFadeOut);
     RightChoice();
+    pronoDone.Call();
   } else {
     // pass;
   }

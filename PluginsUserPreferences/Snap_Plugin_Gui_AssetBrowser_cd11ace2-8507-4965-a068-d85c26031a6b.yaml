@@ -1,8 +1,9 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 11
+    size: 22
     values:
+      - Arrows.mat
       - Base.png
       - Face Mask.mat
       - Face Mesh.facemesh
@@ -10,8 +11,18 @@ CollapsedEntities:
       - FaceMask.png
       - FaceMaskOpacity.jpg
       - FaceMeshTexture.jpg
+      - Legal.mat
+      - Scripts/DirectorBasics/SubScenes/EndScreen.js
       - Scripts/DirectorBasics/SubScenes/Game.js
+      - T&C.mat
+      - TextUnlocked.mat
       - Textures/Base
+      - Textures/Legal/LEGAL_BANNER.png
+      - Textures/Legal/TEXT_LEGAL.png
+      - Textures/RenderTargets
+      - Textures/endscreen/ARROWS_DOWN.mp4
+      - Textures/endscreen/TEXT_UNLOCKED 2.png
+      - Textures/temp assets/choices
       - face_mesh.ss_graph
       - flat.ss_graph
   options: 4
