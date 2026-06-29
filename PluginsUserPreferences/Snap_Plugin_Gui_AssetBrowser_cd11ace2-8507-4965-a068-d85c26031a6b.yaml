@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 22
+    size: 24
     values:
       - Arrows.mat
       - Base.png
@@ -14,15 +14,17 @@ CollapsedEntities:
       - Legal.mat
       - Scripts/DirectorBasics/SubScenes/EndScreen.js
       - Scripts/DirectorBasics/SubScenes/Game.js
+      - Scripts/DirectorBasics/SubScenes/Widget_UI_References.js
+      - Scripts/games/GameSetUp.js
       - T&C.mat
       - TextUnlocked.mat
       - Textures/Base
       - Textures/Legal/LEGAL_BANNER.png
+      - Textures/Legal/LEGAL_BANNER_V02.png
       - Textures/Legal/TEXT_LEGAL.png
       - Textures/RenderTargets
       - Textures/endscreen/ARROWS_DOWN.mp4
       - Textures/endscreen/TEXT_UNLOCKED 2.png
-      - Textures/temp assets/choices
       - face_mesh.ss_graph
       - flat.ss_graph
   options: 4

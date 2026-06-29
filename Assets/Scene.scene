@@ -40,6 +40,43 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/04aeb191-5689-4f61-b203-1b5840cb963e>
+  PrefabRemaps:
+    []
+  Name: GameSetUp
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    teamLeftColor1: true
+    teamLeftColor2: true
+    teamLeftColor3: true
+    teamRightColor1: true
+    teamRightColor2: true
+    teamRightColor3: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 5
+      day: 29
+      year: 2026
+      hour: 22
+      minutes: 30
+      nameL: Germany
+      imageTeamL: !<reference.Texture> 1421ef7d-4f35-4a6d-80f7-01877c04dbbd
+      makeUpL: !<reference.Texture> 1421ef7d-4f35-4a6d-80f7-01877c04dbbd
+      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      nameR: Paraguay
+      imageTeamR: !<reference.Texture> 2fea4931-a581-4911-b507-811947dcb22c
+      makeUpR: !<reference.Texture> 2fea4931-a581-4911-b507-811947dcb22c
+      teamRightColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/062c37bb-493e-45e0-849b-8d22ebff185b>
   PrefabRemaps:
     []
@@ -124,7 +161,7 @@
 - !<SceneObject/0c5eec9f-5595-4f64-8836-bd26b65ed2b5>
   PrefabRemaps:
     []
-  Name: Legal
+  Name: LegalBanner
   Enabled: true
   Layers: 4
   LocalTransform: !<TransformEntity>
@@ -155,39 +192,6 @@
   Components:
     - !<own> 699ea3fb-804b-43ee-a067-5d0f24d1b270
     - !<own> 3632fa61-dab6-4578-bb68-15f673fc745c
-- !<ScreenTransform/109adac3-3080-46f6-bb7e-fa632e9b5aec>
-  PrefabRemaps:
-    []
-  Name: Screen Transform
-  Enabled: true
-  IsAdvanced: false
-  Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
-    fixedWidth: false
-    fixedHeight: false
-    deactivatedFixedSprite: false
-    deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: 0.000000}
-  Transform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  RawMode: true
-  ForceBasic: true
-  Anchor:
-    left: -1.000000
-    bottom: -1.000000
-    right: 1.000000
-    top: 1.000000
-  Offset:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: 0.000000
 - !<SceneObject/10a4b6d9-a0ac-461a-8778-8e2985d18fd5>
   PrefabRemaps:
     []
@@ -222,22 +226,6 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/12c213f3-d3c6-4df7-a59e-5fa1b5bb70d5>
-  PrefabRemaps:
-    []
-  Name: T&C
-  Enabled: true
-  Layers: 4
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 109adac3-3080-46f6-bb7e-fa632e9b5aec
-    - !<own> 251032f1-185a-41b5-aeba-b1c81d851c7b
 - !<SceneObject/12e59e53-9c73-4066-a95f-0a37e103e5f6>
   PrefabRemaps:
     []
@@ -342,9 +330,9 @@
   ForceBasic: true
   Anchor:
     left: 0.000000
-    bottom: 0.050000
+    bottom: 0.000000
     right: 0.000000
-    top: 0.050000
+    top: 0.000000
   Offset:
     left: -5.625000
     bottom: -10.000000
@@ -388,25 +376,6 @@
     - !<own> d7fdee8d-78d7-4dcd-a563-fbdc4003b1c9
   Components:
     []
-- !<Image/251032f1-185a-41b5-aeba-b1c81d851c7b>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> c27dbe5b-dd06-4d8d-b2e0-b7bc176c0e50
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/254ea28e-b853-4d9a-8d17-9c119f4e10c2>
   PrefabRemaps:
     []
@@ -1725,6 +1694,21 @@
     - !<own> aeba9ea5-0306-45de-9fdb-438d681a0dc4
   Components:
     - !<own> ec4dbff1-7f10-4cc7-99cb-90759f16cb31
+- !<SceneObject/964264ab-ba64-476c-b93c-4caf4981f923>
+  PrefabRemaps:
+    []
+  Name: Japan_Brasil
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f5bdd1d1-492a-4ba9-9f16-849d8afc9bb8
 - !<ScriptComponent/98a3bf32-29d0-41fc-97bc-ab041afef858>
   PrefabRemaps:
     []
@@ -2251,7 +2235,6 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> 12c213f3-d3c6-4df7-a59e-5fa1b5bb70d5
     - !<own> 0c5eec9f-5595-4f64-8836-bd26b65ed2b5
   Components:
     - !<own> 2938c632-ce7a-4085-a3d8-87aeb0d92465
@@ -2389,6 +2372,21 @@
     []
   Components:
     - !<own> 9fff1394-3854-4b37-a05f-ea51f54c050b
+- !<SceneObject/d221118c-5c03-46b6-a042-c8dc3bdd91bd>
+  PrefabRemaps:
+    []
+  Name: Germany_Paraguay
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 04aeb191-5689-4f61-b203-1b5840cb963e
 - !<ScriptComponent/d3286855-db91-421b-8b37-2d494c0c5031>
   PrefabRemaps:
     []
@@ -2494,6 +2492,7 @@
     - !<own> f2b18d58-9f2b-4667-a571-3ea0fe45a003
     - !<own> aff1b28c-52e3-4913-bf8c-b6010c4732ff
     - !<own> 4796ca99-2e13-4b4f-acd1-5eed51675817
+    - !<own> f633cd59-945d-4f60-96a6-ed8805f11c26
   Components:
     []
 - !<SceneObject/dd3e21b9-20c4-4a64-be9b-3fc155043a98>
@@ -2958,6 +2957,60 @@
     []
   Components:
     - !<own> 52994aff-f7e6-4084-ab19-6c822cb51e5c
+- !<ScriptComponent/f5bdd1d1-492a-4ba9-9f16-849d8afc9bb8>
+  PrefabRemaps:
+    []
+  Name: GameSetUp
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+    teamLeftColor1: true
+    teamLeftColor2: true
+    teamLeftColor3: true
+    teamRightColor1: true
+    teamRightColor2: true
+    teamRightColor3: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 5
+      day: 29
+      year: 2026
+      hour: 19
+      minutes: 0
+      nameL: Brasil
+      imageTeamL: !<reference.Texture> d406f98c-ab8f-4c33-98fc-12671a75e7c5
+      makeUpL: !<reference.Texture> d406f98c-ab8f-4c33-98fc-12671a75e7c5
+      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      nameR: Japan
+      imageTeamR: !<reference.Texture> 1a4b1435-1241-4ca6-98c6-b5c298196e0c
+      makeUpR: !<reference.Texture> 1a4b1435-1241-4ca6-98c6-b5c298196e0c
+      teamRightColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/f633cd59-945d-4f60-96a6-ed8805f11c26>
+  PrefabRemaps:
+    []
+  Name: Games
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 964264ab-ba64-476c-b93c-4caf4981f923
+    - !<own> d221118c-5c03-46b6-a042-c8dc3bdd91bd
+  Components:
+    []
 - !<SceneObject/f650b4b2-947a-4c26-a206-af7498649d6e>
   PrefabRemaps:
     []

@@ -1,0 +1,114 @@
+- !<AssetImportMetadata/d3f145f4-3fe8-427c-2df2-aa30dda3f651>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 38a7dd16-6655-4437-b381-60ba53dfaf04
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 38a7dd16-6655-4437-b381-60ba53dfaf04
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 0d3112de-1a0a-425d-8643-fad210b36938
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/0d3112de-1a0a-425d-8643-fad210b36938>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: d0d626ce-2f52-4b84-93d1-f4c955d1dd46
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    animalType: false
+    controlUser: false
+    float0: false
+    floatUser0: false
+    floatUser1: false
+    intExample: false
+    myBool: false
+    myColor: false
+    myColorAlpha: false
+    myColorExample: false
+    myCombobox: false
+    myFloat: false
+    myFloatClamp: false
+    myFloatSlider: false
+    myInt: false
+    myIntClamp: false
+    myIntSlider: false
+    myObjArray: false
+    myString: false
+    myStruct: false
+    myStructArray: false
+    myStructInStruct: false
+    myVec2: false
+    myVec3: false
+    myVec4: false
+    number1: false
+    showIfBool: false
+    str0: false
+    strUser0: false
+    strUser1: false
+    string1: false
+    text: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - myBool: false
+      myInt: 0
+      myFloat: !<float> 0.000000
+      myString: ""
+      myObjArray: !<reference.SceneObject[]>
+        []
+      myVec2: !<Vec2> {x: 0.000000, y: 0.000000}
+      myVec3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      myVec4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      text: ""
+      myColor: !<Vec3> {x: 1.000000, y: 0.000000, z: 0.000000}
+      myColorAlpha: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      myCombobox: ""
+      string1: hello
+      number1: 0
+      myIntClamp: 0
+      myFloatClamp: !<float> 0.000000
+      myIntSlider: 0
+      myFloatSlider: 0.500000
+      animalType: ""
+      showIfBool: false
+      intExample: 0
+      myColorExample: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      float0: !<float> 0.000000
+      str0: ""
+      controlUser: ""
+      floatUser0: !<float> 0.000000
+      strUser0: ""
+      floatUser1: !<float> 0.000000
+      strUser1: ""
+      myStruct:
+        a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+        c: 0
+        h: ""
+      myStructArray:
+        []
+      myStructInStruct:
+        properties:
+          a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+          c: 0
+          h: ""
+        v: 0
+  ScriptTypes:
+    -
+      {}

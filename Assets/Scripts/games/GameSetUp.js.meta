@@ -1,0 +1,74 @@
+- !<AssetImportMetadata/44561fc6-2865-4f2a-87e3-38a89abc51b7>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> d8304bcb-8b96-4fba-af59-8063f158aede
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/d8304bcb-8b96-4fba-af59-8063f158aede>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: cdf43da4-3983-4a79-887c-5e24844c6d59
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    day: false
+    hour: false
+    imageTeamL: false
+    imageTeamR: false
+    makeUpL: false
+    makeUpR: false
+    minutes: false
+    month: false
+    nameL: false
+    nameR: false
+    teamLeftColor1: false
+    teamLeftColor2: false
+    teamLeftColor3: false
+    teamRightColor1: false
+    teamRightColor2: false
+    teamRightColor3: false
+    year: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - month: 0
+      day: 0
+      year: 0
+      hour: 0
+      minutes: 0
+      nameL: ""
+      imageTeamL: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      makeUpL: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      nameR: ""
+      imageTeamR: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      makeUpR: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      teamRightColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+  ScriptTypes:
+    -
+      {}
