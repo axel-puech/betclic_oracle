@@ -28,12 +28,14 @@
   ScriptInputsHidden:
     Sounds: false
     animDuration: false
-    choiceLeft: false
-    choiceRight: false
+    containerLeft: false
+    containerRight: false
     delayBeforeFadeOut: false
     parent: false
     parentLeft: false
     parentRight: false
+    teamLeft: false
+    teamRight: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -47,9 +49,11 @@
       animDuration: 0.500000
       delayBeforeFadeOut: !<float> 1.000000
       parentLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      choiceLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      containerLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      teamLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       parentRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      choiceRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      containerRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      teamRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       Sounds: !<reference.AudioComponent[]>
         []
   ScriptTypes:

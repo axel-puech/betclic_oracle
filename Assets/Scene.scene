@@ -23,6 +23,38 @@
   RenderPreviewOutput: !<reference> 26bffde9-a933-42f5-9f94-ce41e54f8e40
   RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
   PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/014e1773-64c4-4897-8658-f0f45d4b98f8>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 5
+      day: 30
+      year: 2026
+      hour: 21
+      minutes: 0
+      nameL: France
+      imageTeamL: !<reference.Texture> 26564983-81c0-4405-9d19-5f8bd0063637
+      makeUpL: !<reference.Texture> 26564983-81c0-4405-9d19-5f8bd0063637
+      teamLeftColor1: !<Vec4> {x: 0.117739, y: 0.207156, z: 0.595209, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.857908, y: 0.265873, z: 0.277592, w: 1.000000}
+      nameR: Sweden
+      imageTeamR: !<reference.Texture> ba434a06-3521-404f-bd3d-84c619592c5f
+      makeUpR: !<reference.Texture> ba434a06-3521-404f-bd3d-84c619592c5f
+      teamRightColor1: !<Vec4> {x: 0.191653, y: 0.430426, z: 0.645991, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.967773, y: 0.818845, z: 0.285405, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 0.286137, y: 0.469978, z: 0.666987, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/01844936-6862-4323-95f0-c0abe72e667a>
   PrefabRemaps:
     []
@@ -40,19 +72,33 @@
   ScriptTypes:
     "":
       {}
+- !<Image/03c5e1d2-c1b8-4a05-8d31-589f315805b9>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 2
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0e8f4220-4712-45e9-a034-4bdbe8df118f
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/04aeb191-5689-4f61-b203-1b5840cb963e>
   PrefabRemaps:
     []
-  Name: GameSetUp
+  Name: Game_Set_Up
   Enabled: true
   ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
   ScriptInputsDefault:
-    teamLeftColor1: true
-    teamLeftColor2: true
-    teamLeftColor3: true
-    teamRightColor1: true
-    teamRightColor2: true
-    teamRightColor3: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -63,17 +109,17 @@
       hour: 22
       minutes: 30
       nameL: Germany
-      imageTeamL: !<reference.Texture> 1421ef7d-4f35-4a6d-80f7-01877c04dbbd
-      makeUpL: !<reference.Texture> 1421ef7d-4f35-4a6d-80f7-01877c04dbbd
-      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamLeftColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamLeftColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      imageTeamL: !<reference.Texture> d1d578f4-4769-4cb6-9688-9cf97433205c
+      makeUpL: !<reference.Texture> d1d578f4-4769-4cb6-9688-9cf97433205c
+      teamLeftColor1: !<Vec4> {x: 0.079103, y: 0.079103, z: 0.079103, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 0.802731, y: 0.187625, z: 0.140871, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.971679, y: 0.822751, z: 0.281498, w: 1.000000}
       nameR: Paraguay
-      imageTeamR: !<reference.Texture> 2fea4931-a581-4911-b507-811947dcb22c
-      makeUpR: !<reference.Texture> 2fea4931-a581-4911-b507-811947dcb22c
-      teamRightColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamRightColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamRightColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      imageTeamR: !<reference.Texture> 79001cd0-126d-436b-a1e3-49d358243842
+      makeUpR: !<reference.Texture> 79001cd0-126d-436b-a1e3-49d358243842
+      teamRightColor1: !<Vec4> {x: 0.775387, y: 0.269780, z: 0.211063, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 0.090761, y: 0.226688, z: 0.638178, w: 1.000000}
   ScriptTypes:
     "":
       {}
@@ -174,6 +220,21 @@
   Components:
     - !<own> 1aee06c5-1a7d-4a55-acf7-a0cf61ffd41a
     - !<own> d63c1a6a-31f7-4d16-bd6a-f1bf1a2b4ff9
+- !<SceneObject/0d5feb5f-f064-4ffe-91bc-2db9ac848fa4>
+  PrefabRemaps:
+    []
+  Name: teamRight
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.500000, y: 0.500000, z: 0.500000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c116e620-6aa7-417a-9cfb-21b630a558ce
 - !<SceneObject/0d88cf4e-998f-452b-9cea-7f75825d8be1>
   PrefabRemaps:
     []
@@ -229,7 +290,7 @@
 - !<SceneObject/12e59e53-9c73-4066-a95f-0a37e103e5f6>
   PrefabRemaps:
     []
-  Name: choice_right
+  Name: containerRight
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
@@ -238,7 +299,7 @@
     Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 0d5feb5f-f064-4ffe-91bc-2db9ac848fa4
   Components:
     - !<own> 88440b9b-7a53-44e0-bfc1-21279cd7bcde
 - !<SceneObject/13bbafc0-3995-4cf0-a43a-f951ad4554a9>
@@ -354,6 +415,21 @@
   Components:
     - !<own> 2c4d5ebf-892b-422a-96b7-e41e27087891
     - !<own> 12c12274-7e7d-4be5-bca0-a9ab4cff7a73
+- !<SceneObject/1c94112b-817c-4de1-9b07-59fa13830d4e>
+  PrefabRemaps:
+    []
+  Name: teamLeft
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.500000, y: 0.500000, z: 0.500000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 03c5e1d2-c1b8-4a05-8d31-589f315805b9
 - !<ScreenRegionComponent/1d41ab83-e684-47a5-91b1-d9ebbad3bca7>
   PrefabRemaps:
     []
@@ -376,6 +452,38 @@
     - !<own> d7fdee8d-78d7-4dcd-a563-fbdc4003b1c9
   Components:
     []
+- !<ScriptComponent/25157347-ffb5-430d-abbf-68b5ae634a53>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 6
+      day: 1
+      year: 2026
+      hour: 3
+      minutes: 0
+      nameL: Mexico
+      imageTeamL: !<reference.Texture> 763a500e-bf1a-41d7-8ede-d326b4917b0e
+      makeUpL: !<reference.Texture> 763a500e-bf1a-41d7-8ede-d326b4917b0e
+      teamLeftColor1: !<Vec4> {x: 0.195438, y: 0.434333, z: 0.320562, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.748043, y: 0.191531, z: 0.211063, w: 1.000000}
+      nameR: Ecuador
+      imageTeamR: !<reference.Texture> 98d1672a-63bf-4200-848e-5b74a1014b03
+      makeUpR: !<reference.Texture> 98d1672a-63bf-4200-848e-5b74a1014b03
+      teamRightColor1: !<Vec4> {x: 0.979492, y: 0.877440, z: 0.301030, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.140993, y: 0.320562, z: 0.626459, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 0.854002, y: 0.226688, z: 0.203372, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/254ea28e-b853-4d9a-8d17-9c119f4e10c2>
   PrefabRemaps:
     []
@@ -540,6 +648,38 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/34579d72-985e-44f2-b5e4-4c85a24d5cba>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 6
+      day: 1
+      year: 2026
+      hour: 18
+      minutes: 0
+      nameL: England
+      imageTeamL: !<reference.Texture> dd83539e-3186-4a07-9c37-c2f25006914a
+      makeUpL: !<reference.Texture> dd83539e-3186-4a07-9c37-c2f25006914a
+      teamLeftColor1: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 0.748043, y: 0.191531, z: 0.207156, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      nameR: CongoDR
+      imageTeamR: !<reference.Texture> 4ac46039-28e5-4071-b5d0-5f6dd0671400
+      makeUpR: !<reference.Texture> 4ac46039-28e5-4071-b5d0-5f6dd0671400
+      teamRightColor1: !<Vec4> {x: 0.238651, y: 0.516594, z: 0.967773, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.952148, y: 0.854002, z: 0.328374, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 0.751949, y: 0.199344, z: 0.207156, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<ScreenTransform/3632fa61-dab6-4578-bb68-15f673fc745c>
   PrefabRemaps:
     []
@@ -654,6 +794,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/3b8c00fc-b07a-46b9-9f80-1f0a664c9e1b>
+  PrefabRemaps:
+    []
+  Name: France_Sweden
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 014e1773-64c4-4897-8658-f0f45d4b98f8
 - !<SceneObject/3f940e06-debb-48fd-8850-0de744b708f4>
   PrefabRemaps:
     []
@@ -669,6 +824,54 @@
     []
   Components:
     - !<own> 54775518-1436-4b94-8672-bf93c0cf3682
+- !<SceneObject/4087f201-938e-4cc2-857f-acc63b072550>
+  PrefabRemaps:
+    []
+  Name: Confettis
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> be83664c-fb93-4d2b-b248-f98b4fc6f59d
+- !<ScriptComponent/40ca02cc-66c2-49a7-9b54-58840ad70751>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+    teamLeftColor1: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 6
+      day: 1
+      year: 2026
+      hour: 22
+      minutes: 0
+      nameL: Belgium
+      imageTeamL: !<reference.Texture> 6d177425-d8eb-4c1a-9c5a-02a3a1b0eecf
+      makeUpL: !<reference.Texture> 6d177425-d8eb-4c1a-9c5a-02a3a1b0eecf
+      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor2: !<Vec4> {x: 0.963867, y: 0.889158, z: 0.406989, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.857908, y: 0.265873, z: 0.281743, w: 1.000000}
+      nameR: Senegal
+      imageTeamR: !<reference.Texture> c5350ae8-cf73-4e83-836f-2bc4e6db84a7
+      makeUpR: !<reference.Texture> c5350ae8-cf73-4e83-836f-2bc4e6db84a7
+      teamRightColor1: !<Vec4> {x: 0.258061, y: 0.551751, z: 0.332280, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.983398, y: 0.944335, z: 0.426520, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 0.822751, y: 0.218875, z: 0.203372, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/42563a28-1917-427c-8f2e-7c8090d7ee6a>
   PrefabRemaps:
     []
@@ -723,12 +926,12 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 119.000000, z: -250.000000}
+    Rotation: {x: 2.200000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 4df07feb-c43b-417d-89d5-ee3580e92051
   Components:
     []
 - !<ScreenRegionComponent/4784c38f-5b44-4d54-8b2e-042e3d969c02>
@@ -855,6 +1058,19 @@
     - !<own> 7ab4593b-ebfd-4e60-858b-2747fd867b61
   Components:
     []
+- !<VFXComponent/4b91f094-f875-4491-a575-414deaac9e6a>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 2
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 2e48adfa-ec86-4cdf-a6b0-42eb61e8823d
 - !<SceneObject/4cd7f418-5027-4521-8ec8-c496e97932a7>
   PrefabRemaps:
     []
@@ -871,6 +1087,21 @@
     - !<own> 1c8d691c-f01b-454d-9d6f-f042af94f3d7
   Components:
     - !<own> 6823a54f-7ff9-4cff-82e2-c0b5eb0778ad
+- !<SceneObject/4df07feb-c43b-417d-89d5-ee3580e92051>
+  PrefabRemaps:
+    []
+  Name: Confettis
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 3.000000, y: 3.000000, z: 3.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4b91f094-f875-4491-a575-414deaac9e6a
 - !<SceneObject/511e4dde-b361-4f8c-83e6-04ebf720c706>
   PrefabRemaps:
     []
@@ -968,6 +1199,38 @@
   ScriptInputs:
     "":
       {}
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/562748a4-4757-4c52-a887-21fa2e82f445>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 5
+      day: 30
+      year: 2026
+      hour: 19
+      minutes: 0
+      nameL: "Cote d'ivoire"
+      imageTeamL: !<reference.Texture> af53f0fc-e0fc-4e93-a7a1-8a190aead57e
+      makeUpL: !<reference.Texture> af53f0fc-e0fc-4e93-a7a1-8a190aead57e
+      teamLeftColor1: !<Vec4> {x: 0.908690, y: 0.543938, z: 0.211063, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.285649, y: 0.622553, z: 0.418708, w: 1.000000}
+      nameR: Norway
+      imageTeamR: !<reference.Texture> 5f2ac073-d7b1-4355-8391-7585c4b92322
+      makeUpR: !<reference.Texture> 5f2ac073-d7b1-4355-8391-7585c4b92322
+      teamRightColor1: !<Vec4> {x: 0.865721, y: 0.285649, z: 0.258061, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 0.086854, y: 0.187625, z: 0.418708, w: 1.000000}
   ScriptTypes:
     "":
       {}
@@ -1070,7 +1333,7 @@
 - !<ScriptComponent/5f9de563-f70d-47b9-a87c-fed611fefa86>
   PrefabRemaps:
     []
-  Name: MatchHandler
+  Name: Match_Handler
   Enabled: true
   ScriptAsset: !<reference> 19bb8411-7adb-444a-a6f6-3b218cf70546
   ScriptInputsDefault:
@@ -1080,12 +1343,44 @@
   ScriptInputs:
     "":
       parent: !<reference.SceneObject> 9f17dfdc-3ed0-4f1e-9c81-2f52023ac3f3
-      choiceLeftTexture: !<reference.Texture> d406f98c-ab8f-4c33-98fc-12671a75e7c5
-      choiceLeftSelectedTexture: !<reference.Texture> 69ccd637-3f4a-4afc-b001-c117fbe4fc8f
-      makeUpLeftTexture: !<reference.Texture> 1a4b1435-1241-4ca6-98c6-b5c298196e0c
-      choiceRightTexture: !<reference.Texture> 1421ef7d-4f35-4a6d-80f7-01877c04dbbd
-      choiceRightSelectedTexture: !<reference.Texture> e7e21762-4fbc-4ecb-a223-a8ffd73b9c0e
-      makeUpRightTexture: !<reference.Texture> 2fea4931-a581-4911-b507-811947dcb22c
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/5fb6aec5-429a-4adb-8738-963dec182e0d>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+    teamLeftColor1: true
+    teamLeftColor2: true
+    teamLeftColor3: true
+    teamRightColor1: true
+    teamRightColor2: true
+    teamRightColor3: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 5
+      day: 29
+      year: 2026
+      hour: 19
+      minutes: 0
+      nameL: Team1
+      imageTeamL: !<reference.Texture> 6d177425-d8eb-4c1a-9c5a-02a3a1b0eecf
+      makeUpL: !<reference.Texture> 6d177425-d8eb-4c1a-9c5a-02a3a1b0eecf
+      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamLeftColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      nameR: Team2
+      imageTeamR: !<reference.Texture> 6d177425-d8eb-4c1a-9c5a-02a3a1b0eecf
+      makeUpR: !<reference.Texture> 6d177425-d8eb-4c1a-9c5a-02a3a1b0eecf
+      teamRightColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      teamRightColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
   ScriptTypes:
     "":
       {}
@@ -1625,7 +1920,7 @@
 - !<ScriptComponent/8e9c16a4-0fe8-48bb-b523-c758066affb0>
   PrefabRemaps:
     []
-  Name: EndScreen
+  Name: End_Screen
   Enabled: true
   ScriptAsset: !<reference> fd6a0eb2-3ece-42f5-8e04-bd4b13a8bcdd
   ScriptInputsDefault:
@@ -1810,6 +2105,53 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/a30cce0c-6136-4e5b-ac60-6418cfcb926c>
+  PrefabRemaps:
+    []
+  Name: Game_Set_Up
+  Enabled: true
+  ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
+  ScriptInputsDefault:
+    minutes: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      month: 6
+      day: 1
+      year: 2026
+      hour: 2
+      minutes: 0
+      nameL: USA
+      imageTeamL: !<reference.Texture> 65f0ada7-097f-4e4a-b5c6-2caa41a34f5b
+      makeUpL: !<reference.Texture> 65f0ada7-097f-4e4a-b5c6-2caa41a34f5b
+      teamLeftColor1: !<Vec4> {x: 0.305180, y: 0.301274, z: 0.469734, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.657710, y: 0.218875, z: 0.258061, w: 1.000000}
+      nameR: BosniaHerze
+      imageTeamR: !<reference.Texture> 38a3b28a-cad1-4513-9efa-dd294e66dac6
+      makeUpR: !<reference.Texture> 38a3b28a-cad1-4513-9efa-dd294e66dac6
+      teamRightColor1: !<Vec4> {x: 0.039643, y: 0.133059, z: 0.559564, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.963867, y: 0.802731, z: 0.273686, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/a314426c-f1d3-4f66-8976-5fd553b192f8>
+  PrefabRemaps:
+    []
+  Name: USA_BosniaHerze
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a30cce0c-6136-4e5b-ac60-6418cfcb926c
 - !<Image/a6a882d6-b491-41cd-a5ea-5431d35b0c6d>
   PrefabRemaps:
     []
@@ -1990,6 +2332,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> fae6cfc1-f01c-4032-81aa-dc41b0a08dd5
+    - !<own> 4087f201-938e-4cc2-857f-acc63b072550
     - !<own> fa0e3868-f7a8-417f-af62-d6dd7fc74f3e
     - !<own> 862c868e-892e-4ee6-948d-9e1853447f54
     - !<own> 3737999e-096a-4572-baa0-c2abc5e8f6d0
@@ -2245,6 +2588,23 @@
   Enabled: true
   ScreenRegionType: SafeRender
   ResizeWithKeyboard: false
+- !<ScriptComponent/be83664c-fb93-4d2b-b248-f98b4fc6f59d>
+  PrefabRemaps:
+    []
+  Name: Confettis
+  Enabled: true
+  ScriptAsset: !<reference> 5c57f951-145d-4448-ab62-daf86cd98a28
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      parent: !<reference.SceneObject> 44f6d660-329a-4535-a647-3f2f6e1efd5f
+      vfxConfettis: !<reference.VFXComponent> 4b91f094-f875-4491-a575-414deaac9e6a
+  ScriptTypes:
+    "":
+      {}
 - !<ScreenTransform/c0fc22ae-9602-4b62-a864-06355914009d>
   PrefabRemaps:
     []
@@ -2278,6 +2638,25 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<Image/c116e620-6aa7-417a-9cfb-21b630a558ce>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 2
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 3638029a-3a36-47bf-a957-a6ff59babccb
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<Camera/c68ea811-b87c-48f2-a8aa-842b5812cb08>
   PrefabRemaps:
     []
@@ -2425,6 +2804,21 @@
     []
   Components:
     - !<own> 53538bd7-7854-4704-a169-835463202e52
+- !<SceneObject/d6288465-224b-407d-9982-39333ebfc707>
+  PrefabRemaps:
+    []
+  Name: Mexico_Ecuador
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 25157347-ffb5-430d-abbf-68b5ae634a53
 - !<Image/d63c1a6a-31f7-4d16-bd6a-f1bf1a2b4ff9>
   PrefabRemaps:
     []
@@ -2444,10 +2838,25 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/d7a9fc37-fcc7-4347-88f1-33df2e467ca2>
+  PrefabRemaps:
+    []
+  Name: "Team1_Team2[CTR+D]"
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5fb6aec5-429a-4adb-8738-963dec182e0d
 - !<SceneObject/d7fdee8d-78d7-4dcd-a563-fbdc4003b1c9>
   PrefabRemaps:
     []
-  Name: choice_left
+  Name: containerLeft
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
@@ -2456,9 +2865,24 @@
     Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 1c94112b-817c-4de1-9b07-59fa13830d4e
   Components:
     - !<own> e8e20dd1-0bc2-4b5c-a47d-e026b4ea417b
+- !<SceneObject/d899f5d1-1300-4596-ba20-0bfd001bec66>
+  PrefabRemaps:
+    []
+  Name: Belgium_Senegal
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 40ca02cc-66c2-49a7-9b54-58840ad70751
 - !<ScriptComponent/d8b1e9f0-7aa8-41d9-a110-f7f498f180aa>
   PrefabRemaps:
     []
@@ -2495,6 +2919,21 @@
     - !<own> f633cd59-945d-4f60-96a6-ed8805f11c26
   Components:
     []
+- !<SceneObject/dbd56c2f-a28a-4eed-b162-54b57b6f1918>
+  PrefabRemaps:
+    []
+  Name: CoteDiv_Norway
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 562748a4-4757-4c52-a887-21fa2e82f445
 - !<SceneObject/dd3e21b9-20c4-4a64-be9b-3fc155043a98>
   PrefabRemaps:
     []
@@ -2722,6 +3161,21 @@
       - 0.000000
       - 0.000000
   TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/e7fb9171-c5c4-4389-88c1-b0f7a5a49203>
+  PrefabRemaps:
+    []
+  Name: England_CongoDR
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 34579d72-985e-44f2-b5e4-4c85a24d5cba
 - !<Image/e8e20dd1-0bc2-4b5c-a47d-e026b4ea417b>
   PrefabRemaps:
     []
@@ -2807,6 +3261,7 @@
         - !<reference> 8df78f24-91ec-48b3-8f33-5917bf8d3993
         - !<reference> eae28f1a-1c09-4514-b18e-371db32a618e
         - !<reference> 8e9c16a4-0fe8-48bb-b523-c758066affb0
+        - !<reference> be83664c-fb93-4d2b-b248-f98b4fc6f59d
   ScriptTypes:
     "":
       {}
@@ -2827,9 +3282,11 @@
       animDuration: !<float> 1.000000
       delayBeforeFadeOut: !<float> 1.000000
       parentLeft: !<reference.SceneObject> 1ee9ecc6-0897-473f-b328-249e90120b15
-      choiceLeft: !<reference.SceneObject> d7fdee8d-78d7-4dcd-a563-fbdc4003b1c9
+      containerLeft: !<reference.SceneObject> d7fdee8d-78d7-4dcd-a563-fbdc4003b1c9
+      teamLeft: !<reference.SceneObject> 1c94112b-817c-4de1-9b07-59fa13830d4e
       parentRight: !<reference.SceneObject> f650b4b2-947a-4c26-a206-af7498649d6e
-      choiceRight: !<reference.SceneObject> 12e59e53-9c73-4066-a95f-0a37e103e5f6
+      containerRight: !<reference.SceneObject> 12e59e53-9c73-4066-a95f-0a37e103e5f6
+      teamRight: !<reference.SceneObject> 0d5feb5f-f064-4ffe-91bc-2db9ac848fa4
       Sounds: !<reference.AudioComponent[]>
         []
   ScriptTypes:
@@ -2931,7 +3388,7 @@
   PrefabRemaps:
     []
   Name: Face Mesh
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2960,17 +3417,11 @@
 - !<ScriptComponent/f5bdd1d1-492a-4ba9-9f16-849d8afc9bb8>
   PrefabRemaps:
     []
-  Name: GameSetUp
+  Name: Game_Set_Up
   Enabled: true
   ScriptAsset: !<reference> 4cec4655-1921-497d-b61f-cd6af0a1b867
   ScriptInputsDefault:
     minutes: true
-    teamLeftColor1: true
-    teamLeftColor2: true
-    teamLeftColor3: true
-    teamRightColor1: true
-    teamRightColor2: true
-    teamRightColor3: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -2981,17 +3432,17 @@
       hour: 19
       minutes: 0
       nameL: Brasil
-      imageTeamL: !<reference.Texture> d406f98c-ab8f-4c33-98fc-12671a75e7c5
-      makeUpL: !<reference.Texture> d406f98c-ab8f-4c33-98fc-12671a75e7c5
-      teamLeftColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamLeftColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamLeftColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      imageTeamL: !<reference.Texture> 60249f8e-081d-4f0c-a1cc-355262ae222a
+      makeUpL: !<reference.Texture> 60249f8e-081d-4f0c-a1cc-355262ae222a
+      teamLeftColor1: !<Vec4> {x: 0.301030, y: 0.634272, z: 0.340093, w: 1.000000}
+      teamLeftColor2: !<Vec4> {x: 0.975586, y: 0.881346, z: 0.301030, w: 1.000000}
+      teamLeftColor3: !<Vec4> {x: 0.102235, y: 0.203372, z: 0.481453, w: 1.000000}
       nameR: Japan
-      imageTeamR: !<reference.Texture> 1a4b1435-1241-4ca6-98c6-b5c298196e0c
-      makeUpR: !<reference.Texture> 1a4b1435-1241-4ca6-98c6-b5c298196e0c
-      teamRightColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamRightColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      teamRightColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      imageTeamR: !<reference.Texture> 973b13ab-37a7-4fc5-98c1-89e2d4a04c13
+      makeUpR: !<reference.Texture> 973b13ab-37a7-4fc5-98c1-89e2d4a04c13
+      teamRightColor1: !<Vec4> {x: 0.999023, y: 0.999023, z: 0.999023, w: 1.000000}
+      teamRightColor2: !<Vec4> {x: 0.689448, y: 0.160281, z: 0.238529, w: 1.000000}
+      teamRightColor3: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ScriptTypes:
     "":
       {}
@@ -3007,6 +3458,13 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> d7a9fc37-fcc7-4347-88f1-33df2e467ca2
+    - !<own> d899f5d1-1300-4596-ba20-0bfd001bec66
+    - !<own> a314426c-f1d3-4f66-8976-5fd553b192f8
+    - !<own> e7fb9171-c5c4-4389-88c1-b0f7a5a49203
+    - !<own> d6288465-224b-407d-9982-39333ebfc707
+    - !<own> dbd56c2f-a28a-4eed-b162-54b57b6f1918
+    - !<own> 3b8c00fc-b07a-46b9-9f80-1f0a664c9e1b
     - !<own> 964264ab-ba64-476c-b93c-4caf4981f923
     - !<own> d221118c-5c03-46b6-a042-c8dc3bdd91bd
   Components:
@@ -3060,7 +3518,7 @@
 - !<SceneObject/fa0e3868-f7a8-417f-af62-d6dd7fc74f3e>
   PrefabRemaps:
     []
-  Name: EndScreen
+  Name: End_Screen
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>

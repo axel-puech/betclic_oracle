@@ -1,0 +1,70 @@
+- !<Material/665209b9-db74-46fa-a4bc-865a1baf71cd>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> a5a3688b-6d4b-4e9f-bb8d-bd3c0ad0c413
+- !<PassInfo/a5a3688b-6d4b-4e9f-bb8d-bd3c0ad0c413>
+  CachedProperties:
+    []
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    alphaRatio:
+      typeIdx: 1
+      value: 1.000000
+    mixRatio:
+      typeIdx: 1
+      value: 0.000000
+    textureNormal:
+      typeIdx: 9
+      value:
+        id: 24ed1b43-553b-4cd5-8b73-1fe435cb7596
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    textureNormalTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    textureSelected:
+      typeIdx: 9
+      value:
+        id: fb1933b1-cae9-462d-92cd-4564d5e45b13
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    textureSelectedTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+  Pass: !<reference> eed212e2-1cf2-4959-8167-7b263265c94e

@@ -6,17 +6,16 @@
 //@ui {"widget":"separator"}
 //@ui {"widget":"label", "label":"LEFT HEAD PANEL "}
 //@input SceneObject parentLeft
-//@input SceneObject choiceLeft
+//@input SceneObject containerLeft
+//@input SceneObject teamLeft
 
 //@ui {"widget":"separator"}
 //@ui {"widget":"label", "label":"RIGHT HEAD PANEL "}
 //@input SceneObject parentRight
-//@input SceneObject choiceRight
+//@input SceneObject containerRight
+//@input SceneObject teamRight
 
 //@input Component.AudioComponent[] Sounds
-
-// prend deux textures de pays
-// cree un un objet pour chaque
 
 //@input SceneObject parent
 //_________________________Director Setup_________________________//
@@ -31,19 +30,16 @@ script.subScene.SetUpdate(Update);
 let headPanelLeft = null;
 let headPanelRight = null;
 
-// Left Head Panel
-const choiceLeftTexture = global.choiceLeftTexture;
-const choiceLeftSelectedTexture = global.choiceLeftSelectedTexture;
-const makeUpLeftTexture = global.makeUpLeftTexture;
-
-// Right Head Panel
-const choiceRightTexture = global.choiceRightTexture;
-const choiceRightSelectedTexture = global.choiceRightSelectedTexture;
-const makeUpRightTexture = global.makeUpRightTexture;
+let choiceLeftTexture = null;
+let choiceLeftSelectedTexture = null;
+let makeUpLeftTexture = null;
+let choiceRightTexture = null;
+let choiceRightSelectedTexture = null;
+let makeUpRightTexture = null;
 
 //________Caller________//
 const activateTrackingCaller = script.subScene.CreateCaller("activateTrackingEvent", 0);
-const pronoDone = script.subScene.CreateCaller("pronoDoneEvent", null);
+const pronoDone = script.subScene.CreateCaller("pronoDoneEvent", 0);
 
 //________Listener________//
 const headMoveListener = script.subScene.CreateListener("headMoveEvent", OnHeadMove);
@@ -53,7 +49,16 @@ const fadeOutDelay = script.subScene.CreateEvent("DelayedCallbackEvent", OnFadeO
 
 //_________________________Director_Functions_____________________//
 function Start() {}
+
 function OnLateStart() {
+  // Left Head Panel
+  teamLeftTexture = global.nextGame.teamLeft.imageTeam;
+  makeUpLeftTexture = global.nextGame.teamLeft.makeUp;
+
+  // Right Head Panel
+  teamRightTexture = global.nextGame.teamRight.imageTeam;
+  makeUpRightTexture = global.nextGame.teamRight.makeUp;
+
   Instantiation();
   headPanelLeft.anims.fade.GoTo(1);
   headPanelRight.anims.fade.GoTo(1);
@@ -74,12 +79,12 @@ function OnHeadMove(value) {
     activateTrackingCaller.Call(0);
     fadeOutDelay.event.reset(script.delayBeforeFadeOut);
     LeftChoice();
-    pronoDone.Call();
+    pronoDone.Call(0);
   } else if (value == 2) {
     activateTrackingCaller.Call(0);
     fadeOutDelay.event.reset(script.delayBeforeFadeOut);
     RightChoice();
-    pronoDone.Call();
+    pronoDone.Call(1);
   } else {
     // pass;
   }
@@ -112,25 +117,27 @@ function RightChoice() {
 //__________________________Classes_____________________________//
 
 class HeadPanel {
-  constructor(parentObject, imageObject, texture, selectedTexture) {
-    print("HeadPanel constructor");
+  constructor(parentObject, containerObject, teamObject, teamTexture) {
+    // parent is for the scale, rotation and movements
     this._parentObject = parentObject;
-    this._imageObject = imageObject;
-
-    this._texture = texture;
-    this._selectedTexture = selectedTexture;
-
     this._parentTransform = this._parentObject.getTransform();
-    this._image = this._imageObject.getComponent("Component.Image");
+
+    // container object is for the mix, the scale, the fade
+    this._containerObject = containerObject;
+    this._containerImage = this._containerObject.getComponent("Component.Image");
+
+    this._teamObject = teamObject;
+    this._teamImage = this._teamObject.getComponent("Component.Image");
+    this._teamTexture = teamTexture;
 
     this.anims = {
       fade: null,
       scale_up: null,
       scale_down: null,
       mix_texture: null,
-      transparent: null,
     };
 
+    // set the texture of the teamObject to the texture
     this.setTexture();
 
     this.initAnimations();
@@ -138,14 +145,14 @@ class HeadPanel {
   }
 
   setTexture() {
-    this._image.mainPass.textureNormal = this._texture;
-    this._image.mainPass.textureSelected = this._selectedTexture;
+    this._teamImage.mainPass.baseTex = this._teamTexture;
   }
 
   initAnimations() {
-    // Fade animation
+    // Fade animation: fade the container and the team
     this.anims.fade = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
-      this._image.mainPass.alphaRatio = ratio;
+      this._containerImage.mainPass.alphaRatio = ratio;
+      this._teamImage.mainPass.alphaRatio = ratio;
     });
 
     // Scale up animation
@@ -163,12 +170,7 @@ class HeadPanel {
     this.anims.scale_down.Easing = QuadraticInOut;
 
     this.anims.mix_texture = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
-      this._image.mainPass.mixRatio = ratio;
-    });
-
-    // make the not selected panel a bit transparent
-    this.anims.transparent = new Animation(script.getSceneObject(), script.animDuration, (ratio) => {
-      this._image.mainPass.alphaRatio = 1 - ratio * 0.5;
+      this._containerImage.mainPass.mixRatio = ratio;
     });
   }
 
@@ -177,16 +179,10 @@ class HeadPanel {
     this.anims.scale_up.Reset();
     this.anims.scale_down.Reset();
     this.anims.mix_texture.Reset();
-    this.anims.transparent.Reset();
   }
 }
 
 function Instantiation() {
-  headPanelLeft = new HeadPanel(script.parentLeft, script.choiceLeft, choiceLeftTexture, choiceLeftSelectedTexture);
-  headPanelRight = new HeadPanel(
-    script.parentRight,
-    script.choiceRight,
-    choiceRightTexture,
-    choiceRightSelectedTexture,
-  );
+  headPanelLeft = new HeadPanel(script.parentLeft, script.containerLeft, script.teamLeft, teamLeftTexture);
+  headPanelRight = new HeadPanel(script.parentRight, script.containerRight, script.teamRight, teamRightTexture);
 }

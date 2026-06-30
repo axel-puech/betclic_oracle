@@ -1,27 +1,38 @@
 data:
   externalSources:
+    - 02794c94-5ac2-4219-b11f-c3a60b5ae472: /Users/apuech/Downloads/FRANCE.png
     - 07dfe63f-2125-45d8-8e43-0ecdeb3409b6: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Meshes/Resources/Head.mesh
-    - 0ea91396-b98b-4d35-bf24-bf12eacac12d: /Users/apuech/Downloads/Group 8.png
     - 0eb8aae6-4a35-4669-8134-26e0b08eda2f: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/FaceMeshMaterial/Resources/FaceMeshTexture.jpg
+    - 1cd7b346-2808-4ad8-a243-6eb368f8c9a2: /Users/apuech/Downloads/CONGO.png
+    - 1dacfb8c-2b55-4ded-85a5-93eacb2a0ac2: /Users/apuech/Downloads/BELGIUM.png
+    - 2adfaa88-8706-4b14-b752-31a0309aa83f: /Users/apuech/Downloads/BRASIL.png
+    - 3408bdc8-7e08-4aee-8e80-d60666de8487: /Users/apuech/Downloads/ContainerBase.png
     - 344b0623-3d32-4181-8b2b-1f9fcb5f2297: /Users/apuech/Documents/LensStudio/par_betclic_peformance_wc_lens/betclic_performance/Assets/UIBetclic.lspkg/ARROWS_DOWN.mp4
-    - 3d678f57-1419-432e-b6de-ce0ae71a50c5: /Users/apuech/Downloads/Group 2 Selected.png
+    - 3e05d9f4-454b-498c-8087-9054a81a4cda: /Users/apuech/Downloads/COTE IV.png
     - 417064ed-731f-4325-ba4d-50c5e203c852: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/ImageMaterial/Resources/Image.png
-    - 4df15a9c-3042-44ce-beda-75356a827982: /Users/apuech/Downloads/Group 4.png
+    - 52e8f9b5-c064-4be6-8e5e-2198d34ed4fe: /Users/apuech/Downloads/JAPAN.png
+    - 547256e0-6a95-447c-8598-4cbefbd7e130: /Users/apuech/Downloads/MEXICO.png
     - 606dc213-741e-448c-bf73-791d123996ca: /Users/apuech/Documents/LensStudio/par_betclic_peformance_wc_lens/betclic_performance/Assets/UIBetclic.lspkg/AssetsUI/TEXT_UNLOCKED 2.png
     - 6dc9c12f-8851-47b9-b2f6-ef2cc19799f1: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/FaceMaskMaterial/Resources/FaceMaskOpacity.jpg
     - 6e7514b9-136d-4c50-8ec2-b30ac73c90c1: /Users/apuech/Documents/LensStudio/par_betclic_peformance_wc_lens/betclic_performance/Assets/UIBetclic.lspkg/AssetsUI/TEXT_LEGAL.png
+    - 73baa50c-7c20-4d06-a725-939bf22cfa5b: /Users/apuech/Downloads/USA.png
     - 7ff488f2-adf6-43b9-b925-32f9456deeae: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/OccluderMaterial/Resources/occluder.ss_graph
-    - 843b6963-294d-44d2-a3f8-c05879ae3d17: /Users/apuech/Downloads/Group 1.png
     - 8712cb0b-645d-4639-8eee-a5705859f913: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Resources/Base.png
-    - 92da2580-b874-4cd1-a4bf-ae5a30660e8f: /Users/apuech/Downloads/Group 5.png
+    - 893dd6b8-5d8b-4b80-9574-42bcd53cfc83: /Users/apuech/Downloads/SENEGAL.png
+    - 8a36f428-4d01-4dda-86f6-a8c911fe8d0d: /Users/apuech/Downloads/ENGLAND.png
+    - 8a4d6559-85e0-4f44-9c0f-4bf9cd5dd88d: /Applications/Lens Studio.app/Contents/Plugins/Es_VFXGraph_Presets.bundle/Assets/Particles Texture.png
     - 946fda11-f102-451a-8d76-9c01ccaace76: /Users/apuech/Documents/LensStudio/betclic_choices/Assets/Material/Shaders/flat.ss_graph
-    - 9d9d04c9-615f-41be-8ca6-cabaadec433e: /Users/apuech/Downloads/Group 7.png
+    - a697b339-d29f-401d-bdfb-7b00c1723e1e: /Users/apuech/Downloads/ECUADOR.png
     - a73f0acc-e384-4751-ac45-49e0eacdb95b: /Users/apuech/Downloads/LEGAL_BANNER_V02.png
+    - ac9ab389-ce97-4709-8800-a3445ddcd28c: /Users/apuech/Downloads/containerSelected.png
+    - adef6e50-d9d7-47b4-9d1e-f20f77abe1ca: /Users/apuech/Downloads/SWEDEN.png
+    - af1e2de8-468c-4018-a907-b03c25a9abff: /Users/apuech/Downloads/BOSNIA.png
     - bffd0a20-020f-41f6-a9dd-e06f6993d11d: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/FaceMaskMaterial/Resources/FaceMask.png
+    - c20113bc-7b7f-4c54-8963-84bc1df773f5: /Users/apuech/Downloads/NORWAY.png
+    - c51d4e4f-6ad2-4448-b929-cb22ff1f2850: /Users/apuech/Downloads/PARAGUAY.png
+    - c7f00bb3-f1e5-4646-bfb4-9d95ba14c04c: /Users/apuech/Downloads/GERMANY.png
     - d6e6ea55-9967-462a-88dd-0bad2b1b5687: /Users/apuech/Documents/LensStudio/par_betclic_peformance_wc_lens/betclic_performance/Assets/UIBetclic.lspkg/AssetsUI/LEGAL_BANNER.png
-    - d826c8bb-9ed7-4d2d-9b73-35cfab1c207f: /Users/apuech/Downloads/Group 3.png
-    - d8bf265c-13d4-4798-bdcc-20a2fe01a13e: /Users/apuech/Downloads/Group 6.png
     - e0909b51-9438-4cd3-a74b-39b850320bdb: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/FaceMeshMaterial/Resources/face_mesh.ss_graph
+    - e280e08c-f5ff-4706-830d-9743d5f8ade0: /Users/apuech/Downloads/Flag_of_France.png
     - e42d422b-cb89-4305-85e4-748ccd570dc9: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Resources/flat.ss_graph
-    - e582546b-458c-414a-8c37-29b55f4d098f: /Users/apuech/Downloads/Group 2.png
-    - eec491b5-1baf-4651-b2af-3311058e4db6: /Users/apuech/Downloads/Group 1 Selected.png
+    - fc57544e-c61d-4180-a058-454878ce729e: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/EmptyMaterial/Resources/empty.ss_graph

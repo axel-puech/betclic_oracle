@@ -1,0 +1,34 @@
+- !<ObjectPrefab/39d8918f-b401-4172-b976-c6c1c632a20c>
+  PackagePath: ""
+  objects:
+    - !<own> d84a3979-f541-404e-a926-eff6a26ebaa2
+  LazyLoading: false
+  RetainAssets: true
+- !<VFXComponent/ca560dff-9c04-43c6-9ffc-84c66b0dbc02>
+  PrefabRemaps:
+    []
+  Name: VFX
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 2e48adfa-ec86-4cdf-a6b0-42eb61e8823d
+- !<SceneObject/d84a3979-f541-404e-a926-eff6a26ebaa2>
+  PrefabRemaps:
+    []
+  Name: Confetti__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ca560dff-9c04-43c6-9ffc-84c66b0dbc02

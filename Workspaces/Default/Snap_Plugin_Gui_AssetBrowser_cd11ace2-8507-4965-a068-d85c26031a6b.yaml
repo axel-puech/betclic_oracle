@@ -1,10 +1,13 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 24
+    size: 53
     values:
       - Arrows.mat
       - Base.png
+      - Confetti VFX.lspkg/Confetti__PLACE_IN_SCENE.prefab
+      - Confetti VFX.lspkg/VFX 2.0/Simple Emitter VFX.vfxgraph
+      - Confetti VFX.lspkg/package.native
       - Face Mask.mat
       - Face Mesh.facemesh
       - Face Mesh.mat
@@ -12,11 +15,16 @@ CollapsedEntities:
       - FaceMaskOpacity.jpg
       - FaceMeshTexture.jpg
       - Legal.mat
-      - Scripts/DirectorBasics/SubScenes/EndScreen.js
+      - Particles Texture.png
+      - Scripts/DirectorBasics/SubScenes/Confettis.js
+      - Scripts/DirectorBasics/SubScenes/End_Screen.js
       - Scripts/DirectorBasics/SubScenes/Game.js
+      - Scripts/DirectorBasics/SubScenes/Match_Handler.js
       - Scripts/DirectorBasics/SubScenes/Widget_UI_References.js
-      - Scripts/games/GameSetUp.js
+      - Scripts/games/Game_Set_Up.js
       - T&C.mat
+      - Team_left.mat
+      - Team_right.mat
       - TextUnlocked.mat
       - Textures/Base
       - Textures/Legal/LEGAL_BANNER.png
@@ -25,6 +33,27 @@ CollapsedEntities:
       - Textures/RenderTargets
       - Textures/endscreen/ARROWS_DOWN.mp4
       - Textures/endscreen/TEXT_UNLOCKED 2.png
+      - Textures/temp assets/ContainerBase.png
+      - Textures/temp assets/Flag_of_France.png
+      - Textures/temp assets/Teams/BELGIUM.png
+      - Textures/temp assets/Teams/BOSNIA.png
+      - Textures/temp assets/Teams/BRASIL.png
+      - Textures/temp assets/Teams/CONGO.png
+      - Textures/temp assets/Teams/COTE IV.png
+      - Textures/temp assets/Teams/ECUADOR.png
+      - Textures/temp assets/Teams/ENGLAND.png
+      - Textures/temp assets/Teams/FRANCE.png
+      - Textures/temp assets/Teams/GERMANY.png
+      - Textures/temp assets/Teams/JAPAN.png
+      - Textures/temp assets/Teams/MEXICO.png
+      - Textures/temp assets/Teams/NORWAY.png
+      - Textures/temp assets/Teams/PARAGUAY.png
+      - Textures/temp assets/Teams/SENEGAL.png
+      - Textures/temp assets/Teams/SWEDEN.png
+      - Textures/temp assets/Teams/USA.png
+      - Textures/temp assets/containerSelected.png
+      - cheekMakeUp.mat
+      - cheekMakeUp.ss_graph
       - face_mesh.ss_graph
       - flat.ss_graph
   options: 4
